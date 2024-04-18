@@ -1,0 +1,417 @@
+body {
+    background-color: white;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    flex-basis: 100%;
+    margin: auto;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(4, 4, 66, 0.834);
+    height: 25px;
+}
+
+/***************************************GESTION DU MENU******************************************* */
+#mysidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: -300px;
+    padding-top: 60px;
+    transition: ease-in-out 0.5s;
+    background-color: rgba(4, 4, 66, 0.834);
+    word-wrap: break-word;
+}
+
+#mysidenav a {
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    display: block;
+    transition: 0.5s;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+#mysidenav a:hover {
+    letter-spacing: 3px;
+    transition: 0.5s;
+}
+
+#mysidenav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#mysidenav ul li {
+    padding-top: 15px;
+}
+
+#mysidenav .close {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+#mysidenav .close:hover {
+    font-size: 40px;
+    color: white;
+}
+
+#openBtn {
+    cursor: pointer;
+    padding: 5px;
+}
+
+/********************************LE GRAND TITRE***********************************/
+header h3 {
+    color: white;
+    text-align: center;
+    font-size: small;
+    position: relative;
+    bottom: 35px;
+}
+
+/*************************banière_text_accueil******************************************/
+.banière_text_accueil {
+    flex-basis: 95%;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+/***************************************fond accueil********************************/
+.fond_accueil {
+    flex-basis: 100%;
+    height: 450px;
+    box-sizing: content-box;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+    background: url("../album/fond.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    transition: 0.5s;
+}
+
+.new_font {
+    background: url("../album/jacek-dylag-jo8C9bt3uo8-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: 0.5s;
+}
+
+.fond_accueil h1 {
+    padding-top: 100px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.fond_accueil p {
+    color: white;
+    font-weight: bold;
+}
+
+.fond_accueil ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+.fond_accueil ul li a {
+    text-decoration: none;
+    padding: 5px;
+    background-color: inherit;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+.fond_accueil ul li a:hover {
+    background-color: white;
+    color: inherit;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+
+/*******************************************************************************************/
+.store {
+    flex-basis: 95%;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.store h3 {
+    color: rgba(4, 4, 66, 0.834);
+}
+
+.store ul {
+    position: relative;
+    right: 55px;
+}
+
+.store ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.store ul li a {
+    text-decoration: none;
+    background: rgba(4, 4, 66, 0.834);
+    color: white;
+    padding: 6px;
+    border-radius: 15px;
+    transition: all ease-in-out 0.5s;
+}
+
+.store ul li a:hover {
+    border: 1px solid rgba(4, 4, 66, 0.834);
+    background: inherit;
+    color: rgba(4, 4, 66, 0.834);
+    transition: all ease-in-out 0.5s;
+}
+
+/*******************************arrivage*****************************************/
+.arrivage {
+    flex-basis: 95%;
+    margin: auto;
+    margin-top: 50px;
+    box-sizing: content-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*****************************************collection********************************/
+.collection {
+    margin-top: 20px;
+    flex-basis: 95%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.collection h3 {
+    color: rgba(4, 4, 66, 0.834);
+}
+
+/*********************************SECTION CONTENANT DIFFERENT ARTICLE************************/
+section {
+    margin: auto;
+    padding: auto;
+    flex-basis: 95%;
+    padding: 0px;
+    position: relative;
+    bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section div {
+    flex-basis: 20%;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px whitesmoke;
+}
+
+section div img {
+    box-shadow: 0px 0px 10px gainsboro;
+    border-radius: 10px;
+    width: 170px;
+    transition: ease-in-out 0.5s;
+}
+
+section div img:hover {
+    width: 180px;
+    transition: ease-in-out 0.5s;
+}
+
+section div h3 {
+    color: orange;
+}
+
+section div p {
+    text-align: justify;
+    font-size: small;
+    color: gray;
+}
+
+.prixBarre {
+    text-decoration: line-through;
+    color: rgba(4, 4, 66, 0.834);
+    padding-right: 10px;
+}
+
+.prix {
+    font-size: 20px;
+}
+
+section div a {
+    float: right;
+    text-decoration: none;
+    padding: 5px;
+    background-color: inherit;
+    background-color: rgba(4, 4, 66, 0.834);
+    color: white;
+    border-radius: 15px;
+    font-size: xx-small;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+section div a:hover {
+    border: 2px solid rgba(4, 4, 66, 0.834);
+    color: rgba(4, 4, 66, 0.834);
+    background-color: inherit;
+    transition: 0.5s;
+}
+
+
+
+/*********************************************FOOTER*************************************************/
+footer {
+    margin: auto;
+    margin-top: 180px;
+    flex-basis: 100%;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footerbloc {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(4, 4, 66, 0.834);
+    cursor: pointer;
+}
+
+.footerbloc div {
+    flex-basis: 20%;
+}
+
+.footerbloc .title {
+    color: orange;
+    font-weight: 400px;
+}
+
+.footerbloc div p {
+    text-align: left;
+}
+
+.footerbloc div a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerbloc div ul {
+    position: relative;
+    right: 35px;
+}
+
+.footerbloc div ul li {
+    display: inline-block;
+    padding-left: 2px;
+
+}
+
+.icon {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.copy {
+    text-align: right;
+    font-size: small;
+}
+
+@media screen and (max-width:1150px) {
+    section div {
+        flex-basis: 30%;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .footerbloc div {
+        flex-basis: 50%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    section div {
+        flex-basis: 40%;
+    }
+}
+
+@media screen and (max-width:735px) {
+
+    footer {
+        margin-top: 100px;
+    }
+
+    .footerbloc div {
+        flex-basis: 100%;
+        margin-top: 10px;
+    }
+
+    .footerbloc div ul {
+        position: relative;
+
+    }
+
+    .footerbloc div ul li {
+        display: inline-block;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    #mysidenav a {
+        text-transform: lowercase;
+    }
+
+    .swiper {
+        width: 70%;
+    }
+
+    section article {
+        flex-basis: 75%;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    section div {
+        flex-basis: 80%;
+        box-shadow: 0px 0px 5px gainsboro;
+    }
+
+}
