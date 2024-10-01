@@ -186,21 +186,38 @@ header h3 {
 /*****************************baniereImageSlogan*******************************/
 .baniereImageSlogan {
     margin-top: 100px;
-    padding: 10px;
     text-align: center;
 }
 
 .baniereImageSlogan h3 {
-    font-size: 100px;
+    font-size: 110px;
+    color: white;
     word-wrap: break-word;
 }
 
 .carou1 {
-    background-image: url("");
+    background-image: url("https://img.freepik.com/photos-gratuite/smiley-femme-tenant-sacs_23-2148312185.jpg?uid=R166125906&ga=GA1.1.22819257.1712160786&semt=ais_hybrid");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
+    background-attachment: scroll;
+
+}
+
+.carou2 {
+    background-image: url("https://img.freepik.com/photos-gratuite/belle-femme-prenant-selfie_23-2148385671.jpg?uid=R166125906&ga=GA1.1.22819257.1712160786&semt=ais_hybrid");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.carou3 {
+    background-image: url("https://img.freepik.com/photos-gratuite/smiley-femme-carte-sacs-provisions_23-2148312205.jpg?uid=R166125906&ga=GA1.1.22819257.1712160786&semt=ais_hybrid");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /*********************************SECTION CONTENANT DIFFERENT ARTICLE************************/
@@ -358,9 +375,19 @@ footer {
 }
 
 @media screen and (max-width:950px) {
+    .baniereImageSlogan h3 {
+        font-size: 90px;
+    }
+
     .footerbloc div {
         flex-basis: 50%;
         margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .baniereImageSlogan h3 {
+        font-size: 70px;
     }
 }
 
@@ -390,9 +417,11 @@ footer {
         flex-basis: 80%;
         margin-top: 30px;
     }
+
     .baniereImageSlogan h3 {
         font-size: 50px;
     }
+
     /* section div {
         flex-basis: 80%;
     }*/
