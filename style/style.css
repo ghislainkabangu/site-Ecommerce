@@ -186,16 +186,21 @@ header h3 {
 /*****************************baniereImageSlogan*******************************/
 .baniereImageSlogan {
     margin-top: 100px;
-    background-color: gray;
-    background-color: rgb(255, 27, 179);
-    background: linear-gradient(to left, gray, rgb(255, 27, 179));
-    padding: 20px;
+    padding: 10px;
+    text-align: center;
 }
 
 .baniereImageSlogan h3 {
-    font-size: 60px;
-    color: white;
+    font-size: 100px;
     word-wrap: break-word;
+}
+
+.carou1 {
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
 }
 
 /*********************************SECTION CONTENANT DIFFERENT ARTICLE************************/
@@ -380,12 +385,15 @@ footer {
         text-transform: uppercase;
         font-size: 60px;
     }
+
     .service div {
         flex-basis: 80%;
         margin-top: 30px;
     }
-    
-   /* section div {
+    .baniereImageSlogan h3 {
+        font-size: 50px;
+    }
+    /* section div {
         flex-basis: 80%;
     }*/
 

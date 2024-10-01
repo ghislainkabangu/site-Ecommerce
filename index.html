@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 
@@ -27,7 +28,8 @@
                 <li><a href="#boutique" title="Boutique">Boutique<i class="fa-solid fa-cart-shopping"></i></a> </li>
                 <li><a href="#" title="Fidelité" onclick="fidelite();">Fidelité</a> </li>
                 <li><a href="#" title="Promotion">Promotion<i class="fa-solid fa-bell"></i></a> </li>
-                <li><a href="formulaire.html" title="Le panier">Espace achat<i class="fa-solid fa-cart-shopping"></i></a> </li>
+                <li><a href="formulaire.html" title="Le panier">Espace achat<i
+                            class="fa-solid fa-cart-shopping"></i></a> </li>
             </ul>
         </div>
         <a id="openBtn" title="Cliquez ici pour acceder au menu">
@@ -44,10 +46,12 @@
             <ul>
                 <li><a href="#" title="A propos">A propos</a> </li>
                 <li><a href="#service" title="Services">Services</a> </li>
-                <li><a href="#boutique" title="Boutique">Boutique<i class="fa-solid fa-cart-shopping" style="color: rgb(255, 27, 179);"></i></a> </li>
+                <li><a href="#boutique" title="Boutique">Boutique<i class="fa-solid fa-cart-shopping"
+                            style="color: rgb(255, 27, 179);"></i></a> </li>
                 <li><a href="#" title="Fidelité" onclick="fidelite();">Fidelité</a> </li>
                 <li><a href="#" title="Promotion">Promotion<i class="fa-solid fa-bell"></i></a> </li>
-                <li><a href="formulaire.html" title="Le panier">Espace achat<i class="fa-solid fa-cart-shopping" style="color: rgb(255, 27, 179);"></i></a> </li>
+                <li><a href="formulaire.html" title="Le panier">Espace achat<i class="fa-solid fa-cart-shopping"
+                            style="color: rgb(255, 27, 179);"></i></a> </li>
             </ul>
         </nav>
     </div>
@@ -84,7 +88,27 @@
     </div>
     <!-----------------------------------baniere-------------------------->
     <div class="baniereImageSlogan">
-        <h3>HIGH QUALITY TECH VETEMENTS & ACCESSOIRES</h3>
+        <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide carou1">
+                        <h3>
+                            VETEMENTS & ACCESSOIRES TECH DE HAUTE QUALITÉ
+                        </h3>
+                    </li>
+                    <li class="splide__slide carou2">
+                        <h3>
+                            VETEMENTS & ACCESSOIRES TECH DE HAUTE QUALITÉS
+                        </h3>
+                    </li>
+                    <li class="splide__slide carou3">
+                        <h3>
+                            VETEMENTS & ACCESSOIRES TECH DE HAUTE QUALITÉ
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
     <!--la section contenant différents articles--    <h6>Produits populaires ☻</h6>-->
     <section id="boutique">
@@ -238,6 +262,19 @@
         </div>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var splide = new Splide('.splide', {
+            type: 'loop',
+            perPage: 1,
+            pagination: true,
+            autoplay: true,
+            interval: 5000
+        });
+        splide.mount();
+    });
+</script>
 
 <script src="js/script.js"></script>
 
