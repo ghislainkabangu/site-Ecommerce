@@ -2,19 +2,17 @@ body {
     background-color: white;
     margin: auto;
     padding: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 header {
-    flex-basis: 100%;
-    margin: auto;
     padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(4, 4, 66, 0.834);
-    height: 25px;
+    background-color: rgb(255, 27, 179);
+
 }
 
 /***************************************GESTION DU MENU******************************************* */
@@ -27,23 +25,8 @@ header {
     left: -300px;
     padding-top: 60px;
     transition: ease-in-out 0.5s;
-    background-color: rgba(4, 4, 66, 0.834);
+    background-color: black;
     word-wrap: break-word;
-}
-
-#mysidenav a {
-    padding: 8px 8px 8px 10px;
-    text-decoration: none;
-    display: block;
-    transition: 0.5s;
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-}
-
-#mysidenav a:hover {
-    letter-spacing: 3px;
-    transition: 0.5s;
 }
 
 #mysidenav ul {
@@ -56,12 +39,30 @@ header {
     padding-top: 15px;
 }
 
+#mysidenav ul li a {
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    display: block;
+    transition: 0.5s;
+    color: white;
+}
+
+#mysidenav ul li a:hover {
+    letter-spacing: 3px;
+    transition: 0.5s;
+}
+
+#mysidenav h3 {
+    display: block;
+}
+
 #mysidenav .close {
     cursor: pointer;
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
+    color: white;
 }
 
 #mysidenav .close:hover {
@@ -72,6 +73,7 @@ header {
 #openBtn {
     cursor: pointer;
     padding: 5px;
+    display: none;
 }
 
 /********************************LE GRAND TITRE***********************************/
@@ -79,26 +81,47 @@ header h3 {
     color: white;
     text-align: center;
     font-size: small;
-    position: relative;
-    bottom: 35px;
 }
 
-/*************************banière_text_accueil******************************************/
-.banière_text_accueil {
-    flex-basis: 95%;
-    color: gray;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
+/**************************navigation*****************************************************************/
+/*
+.navigation {
+ /* background-color: gray;
+}
+*/
+.navigation nav {
+    text-align: center;
+}
+
+.navigation nav ul {
+    list-style-type: none;
+}
+
+.navigation nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+.navigation nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 27, 179);
+    transition: ease-in-out 0.5s;
+    color: black;
+}
+
+.navigation nav ul li a:hover {
+    border-bottom: 3px solid rgb(255, 27, 179);
+    font-weight: bold;
+    transition: ease-in-out 0.5s;
 }
 
 /***************************************fond accueil********************************/
 .fond_accueil {
-    flex-basis: 100%;
-    height: 500px;
     box-sizing: content-box;
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
+    padding: 30px;
     text-align: center;
     background: url("../album/fond.jpg");
     background-size: cover;
@@ -117,108 +140,71 @@ header h3 {
 }
 
 .fond_accueil h1 {
-    padding-top: 100px;
     color: white;
     text-transform: uppercase;
+    font-size: 100px;
 }
 
-.fond_accueil p {
-    color: white;
-    font-weight: bold;
-}
-
-.fond_accueil ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 5px;
-}
-
-.fond_accueil ul li a {
-    text-decoration: none;
-    padding: 5px;
-    background-color: inherit;
-    color: white;
-    font-weight: bold;
-    border: 2px solid white;
-    border-radius: 15px;
-}
-
-.fond_accueil ul li a:hover {
-    background-color: white;
-    color: inherit;
-    letter-spacing: 2px;
-    transition: 0.5s;
-}
-
-
-/*******************************************************************************************/
-.store {
-    flex-basis: 95%;
-    margin-top: 20px;
-    font-family: Arial, Helvetica, sans-serif
-}
-
-.store h3 {
-    color: rgba(4, 4, 66, 0.834);
-}
-
-.store ul {
-    position: relative;
-    right: 55px;
-}
-
-.store ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding-left: 10px;
-    padding-top: 15px;
-}
-
-.store ul li a {
-    text-decoration: none;
-    background: rgba(4, 4, 66, 0.834);
-    color: white;
-    padding: 6px;
-    border-radius: 15px;
-    transition: all ease-in-out 0.5s;
-}
-
-.store ul li a:hover {
-    border: 1px solid rgba(4, 4, 66, 0.834);
-    background: inherit;
-    color: rgba(4, 4, 66, 0.834);
-    transition: all ease-in-out 0.5s;
-}
-
-/*******************************arrivage*****************************************/
+/*******************************arrivage  Nouvelle Collection*****************************************/
 .arrivage {
-    flex-basis: 95%;
+    width: 95%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 100px;
     box-sizing: content-box;
-    font-family: Arial, Helvetica, sans-serif;
-
 }
 
-/*****************************************collection********************************/
-.collection {
-    margin-top: 20px;
-    flex-basis: 95%;
-    font-family: Arial, Helvetica, sans-serif;
+.arrivage h3 {
+    color: gray;
+    font-size: 60px;
 }
 
-.collection h3 {
-    color: rgba(4, 4, 66, 0.834);
+.reduction {
+    color: rgb(255, 27, 179);
+}
+
+.service {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.service div {
+    flex-basis: 17%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 7px 5px rgb(170, 153, 164);
+}
+
+.service div h4 {
+    font-size: 20px;
+}
+
+.service div p {
+    text-align: justify;
+}
+
+/*****************************baniereImageSlogan*******************************/
+.baniereImageSlogan {
+    margin-top: 100px;
+    background-color: gray;
+    background-color: rgb(255, 27, 179);
+    background: linear-gradient(to left, gray, rgb(255, 27, 179));
+    padding: 20px;
+}
+
+.baniereImageSlogan h3 {
+    font-size: 60px;
+    color: white;
+    word-wrap: break-word;
 }
 
 /*********************************SECTION CONTENANT DIFFERENT ARTICLE************************/
 section {
     margin: auto;
     padding: auto;
-    flex-basis: 95%;
+    width: 95%;
+    margin-top: 50px;
     padding: 0px;
-    position: relative;
-    bottom: 40px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -231,13 +217,14 @@ section div {
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px whitesmoke;
+    /* box-shadow: 0px 0px 10px whitesmoke;*/
 }
 
 section div img {
-    box-shadow: 0px 0px 10px gainsboro;
+    /* box-shadow: 0px 0px 10px gainsboro;*/
     border-radius: 10px;
-    width: 170px;
+    width: 150px;
+    object-fit: cover;
     transition: ease-in-out 0.5s;
 }
 
@@ -247,42 +234,43 @@ section div img:hover {
 }
 
 section div h3 {
-    color: orange;
+    color: gray;
 }
 
-section div p {
-    text-align: justify;
-    font-size: small;
-    color: gray;
+.boxClass {
+    border: 5px double rgb(255, 27, 179);
+    border: 5px dotted rgb(255, 27, 179);
+    padding: 15px;
+    border-radius: 15px;
+    transition: 0.5s;
 }
 
 .prixBarre {
     text-decoration: line-through;
-    color: rgba(4, 4, 66, 0.834);
+    color: rgb(255, 27, 179);
     padding-right: 10px;
 }
 
 .prix {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 section div a {
     float: right;
     text-decoration: none;
     padding: 5px;
-    background-color: inherit;
-    background-color: rgba(4, 4, 66, 0.834);
-    color: white;
     border-radius: 15px;
+    border: 1px solid rgb(255, 27, 179);
+    color: rgb(255, 27, 179);
+    background-color: inherit;
     font-size: xx-small;
-    font-weight: bold;
     transition: 0.5s;
 }
 
 section div a:hover {
-    border: 2px solid rgba(4, 4, 66, 0.834);
-    color: rgba(4, 4, 66, 0.834);
-    background-color: inherit;
+    background-color: rgb(255, 27, 179);
+    color: white;
+    font-weight: bold;
     transition: 0.5s;
 }
 
@@ -291,8 +279,7 @@ section div a:hover {
 /*********************************************FOOTER*************************************************/
 footer {
     margin: auto;
-    margin-top: 180px;
-    flex-basis: 100%;
+    margin-top: 100px;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -302,7 +289,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: rgba(4, 4, 66, 0.834);
+    background-color: black;
     cursor: pointer;
 }
 
@@ -311,12 +298,14 @@ footer {
 }
 
 .footerbloc .title {
-    color: orange;
-    font-weight: 400px;
+    color: rgb(255, 27, 179);
+    color: white;
+    text-decoration: underline;
 }
 
 .footerbloc div p {
     text-align: left;
+    padding-top: 10px;
 }
 
 .footerbloc div a {
@@ -336,25 +325,30 @@ footer {
 }
 
 .icon {
-    background-color: orange;
+    background-color: rgb(255, 27, 179);
     color: white;
     text-align: center;
     padding: 10px;
 }
 
-.icon img {
-    width: 20px;
-    height: 20px;
-}
 
 .copy {
     text-align: right;
     font-size: small;
 }
 
-@media screen and (max-width:1150px) {
+@media screen and (max-width:1100px) {
+    .service {
+        flex-wrap: wrap;
+    }
+
+    .service div {
+        flex-basis: 40%;
+        margin-top: 10px;
+    }
+
     section div {
-        flex-basis: 30%;
+        flex-basis: 40%;
     }
 }
 
@@ -365,53 +359,37 @@ footer {
     }
 }
 
-@media screen and (max-width:800px) {
-    section div {
-        flex-basis: 40%;
-    }
-}
+@media screen and (max-width:700px) {
 
-@media screen and (max-width:735px) {
-
-    footer {
-        margin-top: 100px;
+    #openBtn {
+        display: block;
+        background-color: black;
+        padding: 10px;
     }
+
+    .navigation {
+        display: none;
+    }
+
+    .fond_accueil {
+        padding: 20px;
+    }
+
+    .fond_accueil h1 {
+        color: white;
+        text-transform: uppercase;
+        font-size: 60px;
+    }
+    .service div {
+        flex-basis: 80%;
+        margin-top: 30px;
+    }
+    
+   /* section div {
+        flex-basis: 80%;
+    }*/
 
     .footerbloc div {
         flex-basis: 100%;
-        margin-top: 10px;
     }
-
-    .footerbloc div ul {
-        position: relative;
-
-    }
-
-    .footerbloc div ul li {
-        display: inline-block;
-        padding: 0px;
-    }
-}
-
-@media screen and (max-width:700px) {
-
-    #mysidenav a {
-        text-transform: lowercase;
-    }
-
-    .swiper {
-        width: 70%;
-    }
-
-    section article {
-        flex-basis: 75%;
-        border-radius: 10px;
-        margin-top: 20px;
-    }
-
-    section div {
-        flex-basis: 80%;
-        box-shadow: 0px 0px 5px gainsboro;
-    }
-
 }

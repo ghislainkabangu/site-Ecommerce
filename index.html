@@ -13,17 +13,17 @@
 <body>
     <!--en-tête-->
     <header>
+        <!--Les grands titres-->
+        <h3>Vente FLASH 30% de Reduction à l'achat d'un article</h3>
         <!--Le menu -->
         <div id="mysidenav" class="sidenav">
             <a id="closeBtn" title="Fermer" class="close"> X</a>
             <ul>
                 <li><a href="#" title="A propos">A propos</a> </li>
-                <li><a href="#" title="Services">Services</a> </li>
+                <li><a href="#service" title="Services">Services</a> </li>
                 <li><a href="#boutique" title="Boutique">Boutique</a> </li>
-                <li><a href="#statistique" title="Fidelité">Fidelité</a> </li>
+                <li><a href="#" title="Fidelité" onclick="fidelite();">Fidelité</a> </li>
                 <li><a href="#" title="Promotion">Promotion</a> </li>
-                <li><a href="#listclient" title="partenaria">partenaria</a> </li>
-                <li><a href="#" title="Code promo">Code promo</a></li>
                 <li><a href="formulaire.html" title="Le panier">Espace achat</a> </li>
             </ul>
         </div>
@@ -34,152 +34,154 @@
                 </g>
             </svg>
         </a>
-        <!--Les grands titres-->
-        <h3>Vente FLASH 30% de Reduction à l'achat</h3>
     </header>
-    <div class="banière_text_accueil">
-        <h2>Vêtement et accessoires</h2>
+    <!-------------navigation desktop----------------------->
+    <div class="navigation">
+        <nav>
+            <ul>
+                <li><a href="#" title="A propos">A propos</a> </li>
+                <li><a href="#service" title="Services">Services</a> </li>
+                <li><a href="#boutique" title="Boutique">Boutique</a> </li>
+                <li><a href="#" title="Fidelité" onclick="fidelite();">Fidelité</a> </li>
+                <li><a href="#" title="Promotion">Promotion</a> </li>
+                <li><a href="formulaire.html" title="Le panier">Espace achat</a> </li>
+            </ul>
+        </nav>
     </div>
-    <div class="fond_accueil">
-        <h1>HIGH QUALITY TECH VETEMENTS & ACCESSOIRES</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
-        <ul>
-            <li><a href="#section" class="explore" title="Explore">Cliquer ici</a></li>
-            <li><a href="#footer" class="about" title="About">About Us</a></li>
-        </ul>
-    </div>
-    <!------------------------------->
-    <div class="store">
-        <h3 id="boutique">Produits populaires ☻</h3>
-        <ul>
-            <li><a href="#" class="tout" title="tout">Tout</a></li>
-            <li><a href="#" title="Gear">Gear</a></li>
-            <li><a href="#" title="Vêtement">Vêtement</a></li>
-            <li><a href="#" title="Accessoires">Accessoires</a></li>
-        </ul>
-    </div>
-    <!----------------arrivages----------------->
-    <div class="arrivage">
-      
-                 
+    <!-----------------------------font ------------------------------------->
 
+    <div class="fond_accueil">
+        <h1>profitez de la qualité des service chez M.M boutiuqe</h1>
     </div>
-    <!----------------collection--------------------->
-    <div class="collection" id="section">
-        <h3>Nouvelle Collection</h3>
+    <!----------------Nouvelle Collection--------------->
+    <div class="arrivage" id="service">
+        <h3>Les meilleurs offres avec plus de <span class="reduction"> 30% de réduction.</span></h3>
+        <div class="service">
+            <div>
+                <h4>rapidité</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.ipsum dolor sit amet.</p>
+            </div>
+            <div>
+                <h4>securité</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.ipsum dolor sit amet.</p>
+            </div>
+            <div>
+                <h4>fidelité</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.ipsum dolor sit amet.</p>
+            </div>
+            <div>
+                <h4>responsabilité</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.ipsum dolor sit amet. </p>
+            </div>
+        </div>
     </div>
-    <!--la section contenant différents articles-->
-    <section>
-        <div>
-            <img src="album/veste-homme-hotellerie-2-boutons-lafont-kontir-veste-de-costume-pour-homme.jpg"
+    <!-----------------------------------baniere-------------------------->
+    <div class="baniereImageSlogan">
+        <h3>HIGH QUALITY TECH VETEMENTS & ACCESSOIRES</h3>
+    </div>
+    <!--la section contenant différents articles--    <h6>Produits populaires ☻</h6>-->
+    <section id="boutique">
+
+        <div class="boxArticle">
+            <img src="album/veste-homme-hotellerie-2-boutons-lafont-kontir-veste-de-costume-pour-homme.png"
                 alt="image veste">
             <h3>Veste homme</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
-                dolor sit. Volutpat odio</p>
             <h5> <span class="prixBarre">$250.44</span> <span class="prix">$180.10</span></h5>
             <a class="add" href="#">Add To Card</a>
         </div>
-        <div>
-            <img src="album/sac-a-main-femme-cuir-pu-3.jpg" alt="image">
+        <div class="boxArticle">
+            <img src="album/sac-a-main-femme-cuir-pu-3.png" alt="image">
             <h3>Sac à main femme</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
-                dolor sit. Volutpat odio</p>
             <h5> <span class="prixBarre">$250.44</span> <span class="prix">$100.05</span></h5>
             <a class="add" href="#">Add To Card</a>
         </div>
-        <div>
+        <div class="boxArticle">
             <img src="album/chemise-homme-manche-longues-a-chevrons.jpg" alt="image veste">
             <h3>Chemise homme</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
-                dolor sit. Volutpat odio</p>
             <h5> <span class="prixBarre">$250.44</span> <span class="prix">$90.15</span></h5>
             <a class="add" href="#">Add To Card</a>
         </div>
-        <div>
+        <div class="boxArticle">
             <img src="album/sous-vetements-homme.jpg" alt="image veste">
             <h3>Sous-vêtement</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
-                dolor sit. Volutpat odio</p>
             <h5> <span class="prixBarre">$250.44</span> <span class="prix">$20.10</span></h5>
             <a class="add" href="#">Add To Card</a>
         </div>
-        <div>
+        <div class="boxArticle">
             <img src="album/adydp03056_dcshoes,f_bsnw_frt1.jpg" alt="image veste">
             <h3>Pantalon jeans</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
-                dolor sit. Volutpat odio</p>
             <h5> <span class="prixBarre">$250.44</span> <span class="prix">$120.08</span></h5>
             <a class="add" href="#">Add To Card</a>
         </div>
-        <div>
-            <img src="album/paire-de-sacoches-moustache-mik-2-x-205l.jpg" alt="image veste">
+        <div class="boxArticle">
+            <img src="album/paire-de-sacoches-moustache-mik-2-x-205l.png" alt="image veste">
             <h3>Sac à dos</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
-                dolor sit. Volutpat odio</p>
             <h5> <span class="prixBarre">$250.44</span> <span class="prix">$200.10</span></h5>
             <a class="add" href="#">Add To Card</a>
         </div>
-        <div>
+        <div class="boxArticle">
             <img src="album/500-semerdjian_baskets_1-mcg-hossegor.jpg" alt="image veste">
             <h3>Basket</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
-                dolor sit. Volutpat odio</p>
             <h5> <span class="prixBarre">$250.44</span> <span class="prix">$170.10</span></h5>
-            <a href="#">Add To Card</a>
+            <a href="#" class="add">Add To Card</a>
         </div>
-        <div>
+        <div class="boxArticle">
             <img src="album/amz_303853_st_truered.jpg" alt="image veste">
             <h3>T-shirt</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
-                dolor sit. Volutpat odio</p>
             <h5> <span class="prixBarre">$250.44</span> <span class="prix">$400.10</span></h5>
-            <a href="#">Add To Card</a>
+            <a href="#" class="add">Add To Card</a>
         </div>
-        <div>
-            <img src="album/CHA345BL_1_1024x1024.jpg" alt="image veste">
+        <div class="boxArticle">
+            <img src="album/chausse.png" alt="image veste">
             <h3>Chaussure homme</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
-                dolor sit. Volutpat odio</p>
             <h5> <span class="prixBarre">$250.44</span> <span class="prix">$135.12</span></h5>
             <a class="add" href="#">Add To Card</a>
         </div>
-        <div>
+        <div class="boxArticle">
             <img src="album/vetement-pour-bb-1.jpeg" alt="image">
             <h3>Vêtement pou bébé</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
-                dolor sit. Volutpat odio</p>
             <h5> <span class="prixBarre">$250.44</span> <span class="prix">$125.02</span></h5>
             <a class="add" href="#">Add To Card</a>
         </div>
-        <div>
+        <div class="boxArticle">
             <img src="album/H5000e178c798435dabf6ad9cc94bdfd27.jpg" alt="image">
             <h3>Vêtement femme</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
-                dolor sit. Volutpat odio</p>
             <h5> <span class="prixBarre">$250.44</span> <span class="prix">$110.10</span></h5>
             <a class="add" href="#">Add To Card</a>
         </div>
-        <div>
-            <img src="album/veste-homme-hotellerie-2-boutons-lafont-kontir-veste-de-costume-pour-homme.jpg"
+        <div class="boxArticle">
+            <img src="album/veste-homme-hotellerie-2-boutons-lafont-kontir-veste-de-costume-pour-homme.png"
                 alt="image veste">
             <h3>Caustume homme</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum
-                dolor sit. Volutpat odio</p>
             <h5> <span class="prixBarre">$250.44</span> <span class="prix">$180.10</span></h5>
+            <a class="add" href="#">Add To Card</a>
+        </div>
+        <div class="boxArticle">
+            <img src="album/image-pc-sms-393x261-p19-66701-7_210805144657.png" alt="image veste">
+            <h3>Talon féminen</h3>
+            <h5> <span class="prixBarre">$50.44</span> <span class="prix">$20.10</span></h5>
+            <a class="add" href="#">Add To Card</a>
+        </div>
+        <div class="boxArticle">
+            <img src="album/sac-a-main-femme-cuir-pu-3.png" alt="image">
+            <h3>Sac à main femme</h3>
+            <h5> <span class="prixBarre">$250.44</span> <span class="prix">$100.05</span></h5>
+            <a class="add" href="#">Add To Card</a>
+        </div>
+        <div class="boxArticle">
+            <img src="album/chemise-homme-manche-longues-a-chevrons.jpg" alt="image veste">
+            <h3>Chemise homme</h3>
+            <h5> <span class="prixBarre">$250.44</span> <span class="prix">$90.15</span></h5>
+            <a class="add" href="#">Add To Card</a>
+        </div>
+        <div class="boxArticle">
+            <img src="album/sous-vetements-homme.jpg" alt="image veste">
+            <h3>Sous-vêtement</h3>
+            <h5> <span class="prixBarre">$250.44</span> <span class="prix">$20.10</span></h5>
             <a class="add" href="#">Add To Card</a>
         </div>
     </section>
@@ -245,19 +247,11 @@
             </div>
         </div>
         <div class="icon">
-            <h4> NOS MODES DE PAIEMENT SECURISE</h4>
-            <img src="album/mpesa.jpeg" alt="icon paiement">
-            <img src="album/afficel.png" alt="icon paiement">
-            <img src="album/orange.png" alt="icon paiement">
-            <img src="album/airlet.png" alt="">
-            <img src="album/uba.jpeg" alt="icon paiement">
-            <img src="album/paypal.png" alt="icon paiement">
-            <img src="album/visa.png" alt="icon paiement">
-            <img src="album/visaaa.png" alt="icon paiement">
             <p class="copy">Ghislain-kabangu Copyright© 2024</p>
         </div>
     </footer>
 </body>
 
 <script src="js/script.js"></script>
+
 </html>
