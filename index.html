@@ -58,7 +58,19 @@
     <!-----------------------------font ------------------------------------->
 
     <div class="fond_accueil">
-   <h1>profitez de la qualité des services chez M.M boutiuqe</h1>    
+        <!-- <h1>profitez de la qualité des services chez M.M boutiuqe</h1>-->
+        <div class="splide" role="group" aria-label="Splide Basic HTML Example" id="slider1">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide font1">
+                        <h1>profitez de la qualité des services chez M.M boutiuqe</h1>
+                    </li>
+                    <li class="splide__slide font2">
+                        <h1>profitez de la qualité des services chez M.M boutiuqe</h1>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
     <!----------------Nouvelle Collection--------------->
     <div class="arrivage" id="service">
@@ -88,7 +100,7 @@
     </div>
     <!-----------------------------------baniere-------------------------->
     <div class="baniereImageSlogan">
-        <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+        <div class="splide" role="group" aria-label="Splide Basic HTML Example" id="slider2">
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide carou1">
@@ -263,20 +275,24 @@
     </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var splide = new Splide('.splide', {
-            type: 'loop',
-            perPage: 1,
-            pagination: true,
-            autoplay: true,
-            interval: 3000
-        });
-        splide.mount();
-    });
-</script>
+    new Splide('#slider1', {
+        type: 'loop',
+        perPage: 1,
+        pagination: true,
+        autoplay: true,
+        interval: 5000
+    }).mount();
 
+    new Splide('#slider2', {
+        type: 'loop',
+        perPage: 1,
+        pagination: true,
+        autoplay: true,
+        interval: 3000
+    }).mount();
+
+</script>
 <script src="js/script.js"></script>
 
 </html>

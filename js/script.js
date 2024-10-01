@@ -11,7 +11,7 @@ openBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   sidenav.style = "left: -100%";
 });
-/****************************************************** */
+/****************************************************** 
 let fond_accueil = document.querySelector(".fond_accueil");
 fond_accueil.addEventListener("mouseover", () => {
   fond_accueil.classList.add("new_font");

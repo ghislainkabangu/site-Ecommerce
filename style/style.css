@@ -121,8 +121,17 @@ header h3 {
     box-sizing: content-box;
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 30px;
     text-align: center;
+}
+
+.fond_accueil h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 100px;
+}
+
+.font1 {
+    padding: 30px;
     background: url("../album/fond.jpg");
     background-size: cover;
     background-position: center;
@@ -131,7 +140,8 @@ header h3 {
     transition: 0.5s;
 }
 
-.new_font {
+.font2 {
+    padding: 30px;
     background: url("../album/jacek-dylag-jo8C9bt3uo8-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -139,11 +149,6 @@ header h3 {
     transition: 0.5s;
 }
 
-.fond_accueil h1 {
-    color: white;
-    text-transform: uppercase;
-    font-size: 100px;
-}
 
 /*******************************arrivage  Nouvelle Collection*****************************************/
 .arrivage {
@@ -316,18 +321,18 @@ footer {
 }
 
 .footerbloc div {
-    flex-basis: 20%;
+    flex-basis: 40%;
+    border-bottom: 1px solid white;
 }
 
 .footerbloc .title {
     color: rgb(255, 27, 179);
-    color: white;
-    text-decoration: underline;
 }
 
 .footerbloc div p {
     text-align: left;
     padding-top: 10px;
+    text-transform: uppercase;
 }
 
 .footerbloc div a {
@@ -342,17 +347,19 @@ footer {
 
 .footerbloc div ul li {
     display: inline-block;
-    padding-left: 2px;
+    padding-left: 10px;
+}
 
+.footerbloc div ul li i {
+    color: rgb(255, 27, 179);
 }
 
 .icon {
     background-color: rgb(255, 27, 179);
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
-
 
 .copy {
     text-align: right;
@@ -379,10 +386,6 @@ footer {
         font-size: 90px;
     }
 
-    .footerbloc div {
-        flex-basis: 50%;
-        margin-top: 20px;
-    }
 }
 
 @media screen and (max-width:700px) {
@@ -403,10 +406,6 @@ footer {
         display: none;
     }
 
-    .fond_accueil {
-        padding: 20px;
-    }
-
     .fond_accueil h1 {
         color: white;
         text-transform: uppercase;
@@ -422,11 +421,7 @@ footer {
         font-size: 50px;
     }
 
-    /* section div {
-        flex-basis: 80%;
-    }*/
-
     .footerbloc div {
-        flex-basis: 100%;
+        flex-basis: 90%;
     }
 }
