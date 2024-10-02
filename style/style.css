@@ -3,6 +3,10 @@ body {
     margin: auto;
     padding: auto;
     font-family: Arial, Helvetica, sans-serif;
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+
+    font-style: normal;
 }
 
 html {
@@ -120,14 +124,12 @@ header h3 {
 .fond_accueil {
     box-sizing: content-box;
     overflow: hidden;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
 .fond_accueil h1 {
     color: white;
-    text-transform: uppercase;
-    font-size: 100px;
+    font-size: 80px;
 }
 
 .font1 {
@@ -177,9 +179,9 @@ header h3 {
     text-align: center;
     padding: 10px;
     border-radius: 10px;
-   /* box-shadow: 0px 0px 5px rgb(170, 153, 164);*/
-   box-shadow: 0px 0px 5px whitesmoke;
-   background-color: gainsboro;
+    /* box-shadow: 0px 0px 5px rgb(170, 153, 164);*/
+    box-shadow: 0px 0px 5px whitesmoke;
+    background-color: gainsboro;
 }
 
 .service div h4 {
@@ -199,8 +201,9 @@ header h3 {
 }
 
 .baniereImageSlogan h3 {
-    font-size: 110px;
+    font-size: 85px;
     color: white;
+    text-transform: lowercase;
     word-wrap: break-word;
 }
 
@@ -245,7 +248,6 @@ section {
 section div {
     flex-basis: 20%;
     margin-top: 50px;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
     border-radius: 10px;
     /* box-shadow: 0px 0px 10px whitesmoke;*/
@@ -269,8 +271,7 @@ section div h3 {
 }
 
 .boxClass {
-    border: 5px double rgb(255, 27, 179);
-    border: 5px dotted rgb(255, 27, 179);
+   background:whitesmoke;
     padding: 15px;
     border-radius: 15px;
     transition: 0.5s;
@@ -312,7 +313,6 @@ footer {
     margin: auto;
     margin-top: 100px;
     color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .footerbloc {
@@ -336,7 +336,7 @@ footer {
 .footerbloc div p {
     text-align: left;
     padding-top: 10px;
-    text-transform: uppercase;
+
 }
 
 .footerbloc div a {
@@ -363,6 +363,12 @@ footer {
     color: white;
     text-align: center;
     padding: 5px;
+    transition: 0.5s;
+}
+
+.icon:hover {
+    background-color: gray;
+    transition: 0.5s;
 }
 
 .copy {
@@ -412,8 +418,7 @@ footer {
 
     .fond_accueil h1 {
         color: white;
-        text-transform: uppercase;
-        font-size: 60px;
+        font-size: 40px;
     }
 
     .service div {

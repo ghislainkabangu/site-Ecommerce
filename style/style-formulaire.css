@@ -1,6 +1,9 @@
 body {
     background-color: white;
     margin: auto;
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 header {
@@ -12,14 +15,12 @@ header h1 {
     color: gray;
     font-size: 60px;
     letter-spacing: 1px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header h2 {
     text-align: center;
     font-size: medium;
     text-transform: lowercase;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     letter-spacing: 0px;
     color: rgb(255, 27, 179)
 }
@@ -33,7 +34,6 @@ section {
 
     display: flex;
     justify-content: space-around;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     flex-wrap: wrap;
 }
 
@@ -69,6 +69,7 @@ form {
     padding-bottom: 30px;
     text-align: center;
     background-color: gainsboro;
+    font-family: "Playwrite DE Grund", cursive;
 }
 
 form input[type=text],
@@ -78,31 +79,29 @@ form input[type=text],
     margin: auto;
     width: 40%;
     height: 30px;
-    font-family: Arial, Helvetica, sans-serif;
     border: none;
     border-radius: 5px;
     background: white;
     padding: 5px;
     outline-color: rgb(255, 27, 179);
     transition: ease 0.5s;
+    font-family: "Playwrite DE Grund", cursive;
 }
 
 form input::-webkit-input-placeholder {
     color: gray;
     font-weight: normal;
     opacity: 0.3;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Playwrite DE Grund", cursive;
 }
 
 form select {
     height: 30px;
     width: 83%;
     height: 30px;
-    border: none
-}
-
-form select {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+    font-family: "Playwrite DE Grund", cursive;
+        
 }
 
 .paragraphechoix {
@@ -133,6 +132,7 @@ form button {
     font-weight: bold;
     border-radius: 5px;
     text-transform: uppercase;
+    font-family: "Playwrite DE Grund", cursive;
     transition: 0.5s;
 }
 
@@ -141,12 +141,12 @@ form button:hover {
     color: white;
     transition: 0.5s;
 }
+
 /*******************************************************/
 footer {
     margin: auto;
     margin-top: 100px;
     color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .footerbloc {
@@ -159,7 +159,7 @@ footer {
 }
 
 .footerbloc div {
-    flex-basis:40%;
+    flex-basis: 40%;
     border-bottom: 1px solid white;
 }
 
@@ -169,7 +169,6 @@ footer {
 
 .footerbloc div p {
     text-align: left;
-    text-transform: uppercase;
     padding-top: 10px;
 }
 
@@ -177,18 +176,21 @@ footer {
     text-decoration: none;
     color: white;
 }
+
 .footerbloc div ul {
     position: relative;
     right: 35px;
 }
+
 .footerbloc div ul li {
     display: inline-block;
     padding-left: 10px;
 }
 
-.footerbloc div ul li i{
+.footerbloc div ul li i {
     color: rgb(255, 27, 179);
 }
+
 .icon {
     background-color: rgb(255, 27, 179);
     color: white;
