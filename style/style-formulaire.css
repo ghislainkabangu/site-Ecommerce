@@ -54,12 +54,13 @@ section div {
     object-fit: cover;
 }
 
-.avatar h5 {
+.avatar h3 {
     font-size: 50px;
     font-style: italic;
     color: rgb(255, 27, 179);
 }
 
+/********************************/
 form {
     width: 100%;
     margin-top: 30px;
@@ -101,7 +102,7 @@ form select {
     height: 30px;
     border: none;
     font-family: "Playwrite DE Grund", cursive;
-        
+
 }
 
 .paragraphechoix {
@@ -131,7 +132,6 @@ form button {
     letter-spacing: 2px;
     font-weight: bold;
     border-radius: 5px;
-    text-transform: uppercase;
     font-family: "Playwrite DE Grund", cursive;
     transition: 0.5s;
 }
@@ -200,7 +200,7 @@ footer {
 
 .copy {
     text-align: right;
-    font-size: small;
+    font-size: xx-small;
 }
 
 

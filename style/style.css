@@ -232,6 +232,22 @@ header h3 {
     background-position: center;
 }
 
+.carou4 {
+    background-image: url("https://img.freepik.com/photos-gratuite/femme-plein-coup-se-relaxant-ordinateur-portable_23-2149073167.jpg?uid=R166125906&ga=GA1.2.22819257.1712160786&semt=ais_hybrid");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.carou5 {
+    background-image: url("https://img.freepik.com/photos-gratuite/paiement-par-technologie-simple-sans-fil_23-2149105164.jpg?uid=R166125906&ga=GA1.2.22819257.1712160786&semt=ais_hybrid");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 /*********************************SECTION CONTENANT DIFFERENT ARTICLE************************/
 section {
     margin: auto;
@@ -271,7 +287,7 @@ section div h3 {
 }
 
 .boxClass {
-   background:whitesmoke;
+    background: whitesmoke;
     padding: 15px;
     border-radius: 15px;
     transition: 0.5s;
@@ -373,7 +389,7 @@ footer {
 
 .copy {
     text-align: right;
-    font-size: small;
+    font-size: xx-small;
 }
 
 @media screen and (max-width:1100px) {
@@ -418,6 +434,11 @@ footer {
 
     .fond_accueil h1 {
         color: white;
+        font-size: 40px;
+    }
+
+    .arrivage h3 {
+        color: gray;
         font-size: 40px;
     }
 

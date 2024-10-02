@@ -11,14 +11,13 @@ openBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   sidenav.style = "left: -100%";
 });
-/****************************************************** 
-let fond_accueil = document.querySelector(".fond_accueil");
-fond_accueil.addEventListener("mouseover", () => {
-  fond_accueil.classList.add("new_font");
-});
-fond_accueil.addEventListener("mouseout", () => {
-  fond_accueil.classList.remove("new_font");
-});
+/********************************** */
+let link = document.querySelectorAll(".link");
+for (let i = 0; i < link.length; i++) {
+  link[i].addEventListener("click", () => {
+    sidenav.style = "left: -100%";
+  });
+}
 /****************************************************** */
 let addToCard = document.querySelectorAll(".add");
 for (let i = 0; i < addToCard.length; i++) {
