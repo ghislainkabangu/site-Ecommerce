@@ -451,6 +451,10 @@ footer {
         font-size: 50px;
     }
 
+    .boxClass {
+        padding: 10px;
+    }
+
     .footerbloc div {
         flex-basis: 90%;
     }
