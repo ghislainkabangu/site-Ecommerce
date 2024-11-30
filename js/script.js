@@ -21,7 +21,7 @@ for (let i = 0; i < link.length; i++) {
 /****************************************************** */
 let addToCard = document.querySelectorAll(".add");
 for (let i = 0; i < addToCard.length; i++) {
-  addToCard[i].href = "formulaire.html";
+  addToCard[i].href = "https://docs.google.com/forms/d/e/1FAIpQLSdwTbMjHQYndzIXZPiX11e7Utwg25q6WPSTDL0jwym9fcrxPw/viewform";
   addToCard[i].title = "formulaire d'achat";
   addToCard[i].innerHTML = "commander";
 }
